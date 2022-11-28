@@ -4,7 +4,7 @@ import { collection, addDoc } from "firebase/firestore";
 import firebase from "../database/firebase";
 
 
-const CreateUser = () => {
+const CreateUser = (props) => {
   const [state, setState] = useState({
     name: "",
     email: "",
@@ -26,7 +26,8 @@ const CreateUser = () => {
           email: state.email,
           phone: state.phone
         })
-        alert("User saved successfully")
+        props.navigation.navigate('UsersList')
+        //alert("User saved successfully")
       } catch (error) {
         alert(error.message)
       }
