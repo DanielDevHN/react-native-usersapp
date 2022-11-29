@@ -1,7 +1,22 @@
 import { View, Text } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 
-const UserDetail = () => {
+import { collection, getDocs } from "firebase/firestore";
+import firebase from '../database/firebase'
+
+const UserDetail = (props) => {
+
+  const getUsersById = id => {
+    
+  }
+
+
+  useEffect(() => {
+    
+  }, [])
+  
+
+
   return (
     <View>
       <Text>UserDetail</Text>

@@ -11,6 +11,8 @@
   "dependencies": {
     "@react-navigation/native": "^6.0.14",
     "@react-navigation/native-stack": "^6.9.2",
+    "@rneui/base": "github:react-native-elements/react-native-elements#base",
+    "@rneui/themed": "^4.0.0-rc.7",
     "expo": "~47.0.6",
     "expo-status-bar": "~1.4.2",
     "firebase": "^9.14.0",
